@@ -15,9 +15,10 @@ public class StepDefinition {
 
 	@Given("^Login should be available$")
 	public void login_should_be_available() {
-		 System.setProperty("webdriver.gecko.driver","/usr/local/bin/geckodriver");  //"E:\\geckodriver-v0.20.1-win64\\geckodriver.exe"
+		 System.setProperty("webdriver.gecko.driver","/usr/local/bin/geckodriver");
+		 //System.setProperty("webdriver.gecko.driver","E:\\geckodriver-v0.20.1-win64\\geckodriver.exe");
 		  driver= new FirefoxDriver();
-		  driver.get("http://http://ec2-18-222-145-43.us-east-2.compute.amazonaws.com:8090/TestWebapp");
+		  driver.get("http://ec2-18-222-145-43.us-east-2.compute.amazonaws.com:8090/TestWebapp");
 		  
 	    
 	}
